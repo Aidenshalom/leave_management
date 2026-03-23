@@ -1,0 +1,10 @@
+<?php
+    session_start();
+    unset($_SESSION['ROLE']);
+    unset($_SESSION['USER_ID']);
+    unset($_SESSION['USERNAME']);
+    unset($_SESSION['IMAGE']);
+    unset($_SESSION['DEPARTMENT']);
+    header('location:e_login.php');
+    die();
+?>

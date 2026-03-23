@@ -1,0 +1,9 @@
+<?php
+    session_start();
+        unset($_SESSION['ROLE']);
+        unset($_SESSION['USER_ID']);
+        unset($_SESSION['USERNAME']);
+        unset($_SESSION['IMAGE']);
+        header('location:index.php');
+        die();
+?>
